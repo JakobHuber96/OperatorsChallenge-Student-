@@ -124,12 +124,20 @@ class ViewController: UIViewController, UITextFieldDelegate, SFSafariViewControl
 
         
         // MARK: - Stretch #1
+    var purchasePackages = tickets / 4
+    
+        var res:Double  =   0.0
+
+        res = trunc(Double(purchasePackages))
+
+        print("Result is: ",res)
         
-        
+        var individualTickets = tickets % 4
+        print(individualTickets)
         
         // TODO: - Stretch #1
-//        purchasedPackagesLabel.text = "Buy \(purchasedPackages) packages"
-//        individualTicketsLabel.text = "Buy \(individualTickets) single tickets"
+ //       purchasedPackagesLabel.text = "Buy \(purchasedPackages) packages"
+ //       individualTicketsLabel.text = "Buy \(individualTickets) single tickets"
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
