@@ -94,18 +94,26 @@ class ViewController: UIViewController, UITextFieldDelegate, SFSafariViewControl
         let number10 = arrayOfNumbers[9]
         let number11 = arrayOfNumbers[10]
         let number12 = arrayOfNumbers[11]
+        let equalTo = number1 == number2
+        let notEqualTo = number3 != number4
+        let greaterThan = number6 > number5
+        let lessThan = number7 < number8
+        let greaterThanOrEqualTo = number9 >= number10
+        let lessThanOrEqualTo = number11 <= number12
+   
+        
         
         // MARK: - MVP
 
     
         
-        // TODO: - MVP
-//        equalToLabel.text = "evaluates to \(equalTo)"
-//        notEqualToLabel.text = "evaluates to \(notEqualTo)"
-//        greaterThanLabel.text = "evaluates to \(greaterThan)"
-//        lessThanLabel.text = "evaluates to \(lessThan)"
-//        greaterThanOrEqualToLabel.text = "evaluates to \(greaterThanOrEqualTo)"
-//        lessThanOrEqualToLabel.text = "evaluates to \(lessThanOrEqualTo)"
+      /// TODO: - MVP
+       equalToLabel.text = "evaluates to \(equalTo)"
+        notEqualToLabel.text = "evaluates to \(notEqualTo)"
+        greaterThanLabel.text = "evaluates to \(greaterThan)"
+      lessThanLabel.text = "evaluates to \(lessThan)"
+        greaterThanOrEqualToLabel.text = "evaluates to \(greaterThanOrEqualTo)"
+       lessThanOrEqualToLabel.text = "evaluates to \(lessThanOrEqualTo)"
     }
     
     @IBAction func stretchOne(_ sender: UIButton)
