@@ -151,13 +151,13 @@ class ViewController: UIViewController, UITextFieldDelegate, SFSafariViewControl
         
         if sender.velocity > 0 {
             // MARK: - Stretch #2 - Increase
-            
+            tickets += 1
             
             
         } else {
             // MARK: - Stretch #2 - Decrease
-            
-            
+            tickets -= 1
+
             
         }
         
@@ -170,14 +170,13 @@ class ViewController: UIViewController, UITextFieldDelegate, SFSafariViewControl
         guard let urlAddOn = urlAddOnTextField.text else { return }
         
         // MARK: - Stretch #3
-        
-        
-        
+        let fullURLPath = "https://www.unchartedlearning.org/"
+        let unchartedURL = "about"
         // TODO: - Stretch #3
-//        let myUrl = URL(string: fullURLPath)
-//        let svc = SFSafariViewController(url: myUrl!)
-//        svc.delegate = self
-//        self.present(svc, animated: true, completion: nil)
+        let myUrl = URL(string: fullURLPath)
+       let svc = SFSafariViewController(url: myUrl!)
+        svc.delegate = self
+       self.present(svc, animated: true, completion: nil)
 
     }
 }
